@@ -1,0 +1,162 @@
+label {
+    margin-bottom: 5px;
+}
+select, input[type="text"], input[type="time"] {
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.button-change{
+    height: 20px;
+    width: 100px;
+    border-radius: 30px;
+    background: rgb(71, 158, 169);
+    margin: 20px;
+    float: left;
+    width: 40%;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #000000;
+}
+.button-change:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #6fc3df;
+    cursor: pointer;
+}
+.patientName {
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40%;
+}
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaaaaa;
+    text-align: center;
+    margin: 20px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+nav a{
+    background-color: #F7CAC9;
+    padding: 8px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #808080;
+    transition: all .3s ease;
+}
+nav a:hover, nav a.active {
+    background-color: #3498db;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+}
+.patientName,.date,.time{
+    padding: 5px;
+    border-color: #000000;
+    background:transparent;
+    cursor: pointer;
+    height: 10px;
+    border-radius: 20px;
+    border-width:1px;
+    width: auto;
+    height: 2vw;
+}
+.treatment,.doctor{
+    padding: 5px;
+    border-color: #000000;
+    background:transparent;
+    cursor: pointer;
+    height: 10px;
+    border-radius: 20px;
+    border-width:1px;
+    width: auto;
+    height: 3vw;
+}
+.popup-link{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.popup-link a{
+    background: #f7cac9;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size:17px;
+    cursor:pointer;
+    margin:20px;
+    text-decoration:none;
+    text-align: center;
+    color: #000000;
+    
+}
+.popup-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.3);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.61);
+    display: flex;
+    align-items: center;
+}
+.popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+.popup-content p{
+    font-size: 17px;
+    padding: 10px;
+    line-height: 20px;
+}
+.popup-content a.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background: none;
+    padding: 0;
+    margin: 0;
+    text-decoration:none;
+}
+.popup-content a.close:hover{
+  color:#676767;
+}
+.popup-content span:hover,
+.popup-content span:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popup-container:target{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.popup-container h3{
+  margin:10px;
+}
+.para{
+    padding-left: 15px;
+    padding-right: 15px;
+}
