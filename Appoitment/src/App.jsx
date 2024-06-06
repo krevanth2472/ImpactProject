@@ -12,7 +12,7 @@ import './Components/Index2.css'
 function App() {
   return (
     <>
-      <Header/>
+      <Footer/>
     </>
   )
 }
